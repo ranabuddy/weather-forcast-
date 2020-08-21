@@ -1,0 +1,181 @@
+@font-face {
+  src: url("Chivo-Regular.ttf");
+  font-family: chivo;
+}
+/* @font-face {
+  src: url("Chivo-Light.ttf");
+  font-family: chivol;
+} */
+body {
+  min-height: 100vh;
+  background: radial-gradient(ellipse at bottom, #013155 0%, #01162e 100%);
+}
+.container {
+  width: 300px;
+  height: 380px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  border-radius: 10px;
+  padding-bottom: 50px;
+}
+
+.app-title {
+  width: 300px;
+  height: 50px;
+  border-radius: 10px 10px 0 0;
+  font-family: chivo;
+}
+
+.app-title p {
+  text-align: center;
+  padding: 15px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  color: #293251;
+  font-family: chivo;
+}
+
+.notification {
+  background-color: #f8d7da;
+  display: none;
+  font-family: chivo;
+}
+
+.notification p {
+  color: #721c24;
+  font-size: 1.2em;
+  margin: 0;
+  text-align: center;
+  padding: 10px 0;
+  font-family: chivo;
+}
+
+.weather-container {
+  width: 300px;
+  height: 355px;
+  background-color: #f4f9ff;
+}
+
+.weather-icon {
+  width: 300px;
+  height: 128px;
+}
+
+.weather-icon img {
+  display: block;
+  margin: 0 auto;
+}
+
+.temperature-value {
+  width: 300px;
+  height: 60px;
+}
+
+.temperature-value p {
+  padding: 0;
+  margin: 0;
+  color: #293251;
+  font-size: 4em;
+  font-family: chivo;
+  text-align: center;
+}
+
+.temperature-value span {
+  color: #293251;
+  font-size: 0.5em;
+}
+
+.temperature-description {
+}
+
+.temperature-description p {
+  padding: 8px;
+  margin: 0;
+  color: #293251;
+  font-family: chivo;
+  text-align: center;
+  font-size: 1.2em;
+}
+.wind-speed {
+}
+
+.wind-speed p {
+  padding: 3px;
+  margin: 0;
+  color: #293251;
+  font-family: chivo;
+  text-align: center;
+  font-size: 1em;
+}
+.rainfall {
+}
+
+.rainfall p {
+  padding: 3px;
+  margin: 0;
+  color: #293251;
+  font-family: chivo;
+  text-align: center;
+  font-size: 1em;
+}
+.sun-rise {
+}
+
+.sun-set p {
+  padding: 3px;
+  margin: 0;
+  color: #293251;
+  font-family: chivo;
+  text-align: center;
+  font-size: 1em;
+}
+.location {
+}
+
+.location p {
+  margin: 0;
+  padding: 0;
+  color: #293251;
+  font-family: chivo;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+/* Stars */
+
+.star {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  background: #fff;
+  border-radius: 50px;
+  animation: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.type-1 {
+  width: 1px;
+  height: 1px;
+}
+.type-2 {
+  width: 2px;
+  height: 2px;
+}
+.type-3 {
+  width: 3px;
+  height: 3px;
+}
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1000px);
+  }
+}
